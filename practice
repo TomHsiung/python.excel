@@ -1,0 +1,7 @@
+import pandas as pd
+df = pd.read_excel("~/Downloads/2022.7-9.Outpatient.xlsx", 'Sheet1')
+df.info()
+
+print("Please type the column you want to analyze")
+x = input()
+print(df[x].describe())
